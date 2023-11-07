@@ -1,8 +1,8 @@
 # infotrixs
 ## Weather Master
-Weather master is a simple command line interface based program that fetches the weather of a particular city using a API and also manages a city list that simplify the users work in order to search weather for the favorite cities.
+Weather master is a simple command line interface based program that fetches the weather of a particular city using a API and also manages a city list that simplify the user work in order to search weather for the favorite cities.
 
-### Featrures
+### Features
 1. Command Line Interface / Option Based Simple Control
 2. Colorful User Interface
 3. Favorite City List Maintenance
@@ -15,13 +15,25 @@ Weather master is a simple command line interface based program that fetches the
 1. os
 2. time
 3. datetime
+4. configparser
+5. request
 
-### What I have Learned
-1. **JSON Parsing:** Learned how to serialize and deserialize the json.
-2. Created a secrets.ini file for API-KEY handling for security.
-3. How to display colorful output on terminal using termcolor packages.
-4. I have also learned how to handle data, errors using python.
-5. How to add details to the program while creating a progject. And how to think as a user who gonna use the program.
+### Key Learnings
+**1. JSON Parsing:**
+I have acquired the skill of efficiently serializing and deserializing JSON data, enabling me to work with structured data interchange seamlessly.
+
+**2. Security-conscious API-KEY Management: **
+I have implemented a robust security practice by creating a secrets.ini file for the purpose of securely managing API keys. This safeguards sensitive information and ensures data integrity.
+
+**3. Terminal Output Enhancement: **
+I have mastered the use of the termcolor package to present colorful and aesthetically pleasing output on the terminal. This not only enhances the user experience but also makes the program more visually appealing.
+
+**4. Error Handling and Data Management:**
+I have gained expertise in effectively handling errors and managing data in Python. This allows me to ensure the reliability and stability of the programs I develop.
+
+**5. User-Centric Thinking:** 
+I have honed my ability to consider the end user's perspective when creating projects. This entails adding pertinent details to the program to enhance user experience and ensure the program's utility is maximized.
+
 
 ### Images
 ![image](https://github.com/dev-world-rohit/infotrixs/assets/136791205/8aeb7dff-9a5a-415d-b6fe-f398ab09bea2)
