@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="main-section">
+            <form method="get">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Weather Master</h2>
+                    </div>
+                    <div class="city-input">
+                        <input
+                            type="search"
+                            name="city-name"
+                            id="city-input-search"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="search-button-div">
+                        <button type="submit" id="submit-button">Search</button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="result-div">
+                <div class="loader" None></div>
+                <div class="weather-data" id="weather-data">
+                    <div class="weather-icon"></div>
+                    <div class="sub-result-div">
+                        <div class="content-div">
+                            <div class="city-div"></div>
+                            <div class="description-div"></div>
+                        </div>
+                        <div class="content-div">
+                            <div class="weather-temp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/static/server.js"></script>
+    </body>
+</html>
