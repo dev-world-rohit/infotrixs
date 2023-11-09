@@ -1,4 +1,5 @@
 This part of the **Weather Master** contains the web form of the weather checking program.
+
 Till now I have implement only the ability to search weather and not favorite city list.
 ## Packages Used
 1. Flask
