@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favorite Cities</title>
+        <link rel="stylesheet" href="/static/favorite.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">Favorite Cities</div>
+            <div class="city-list">
+                <ul id="cities-list"></ul>
+            </div>
+            <div class="form">
+                <input
+                    type="text"
+                    id="cityName"
+                    placeholder="Enter city name"
+                />
+                <button onclick="addCity()">Add City</button>
+
+                <button onclick="deleteCity()">Delete City</button>
+
+                <button onclick="modifyCity()">Modify City</button>
+                <input
+                    type="text"
+                    id="newCityName"
+                    placeholder="New city name"
+                    style="display: none"
+                />
+                <button id="update-button" style="display: none" onclick="updateCity()">Update City</button>
+            </div>
+        </div>
+        <script src="/static/favorite.js"></script>
+    </body>
+</html>

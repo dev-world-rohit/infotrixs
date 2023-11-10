@@ -1,6 +1,6 @@
+let search_data = false;
 document.addEventListener("DOMContentLoaded", function () {
     // Variable declarations
-    let search_data = false;
 
     // Event listener for the submit button
     document
@@ -47,14 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Error fetching weather data:", error)
             );
     }
-
-    // Initial call to get weather data
-    if (search_data) {
-        // Set up interval to update weather data every 30 seconds
-        setInterval(function () {
-            // Get the city value from the input field
-            var city = document.getElementById("city-input-search").value;
-            getWeatherData(city);
-        }, 30000); // Adjusted interval to 30 seconds
-    }
 });
+
+// while (search_data){
+//     // Set up interval to update weather data every 30 seconds
+//     setInterval(function () {
+//         // Get the city value from the input field
+//         var city = document.getElementById("city-input-search").value;
+//         getWeatherData(city);
+//     }, 1000); // Adjusted interval to 30 seconds
+// }
