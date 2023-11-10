@@ -8,44 +8,81 @@
     </head>
     <body>
         <section class="main-section">
-            <div class="favorite-city">
-                <a href="/favorite">Favorite Cities</a>
-            </div>
-            <form method="get">
+            <section class="sub-section">
+                <form method="get">
+                    <div class="container">
+                        <div class="heading">
+                            <h2>Weather Master</h2>
+                        </div>
+                        <div class="city-input">
+                            <input
+                                type="search"
+                                name="city-name"
+                                id="city-input-search"
+                                class="input-search"
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="search-button-div">
+                            <button type="submit" id="submit-button">
+                                Search
+                            </button>
+                        </div>
+                        <div class="result-div">
+                            <div class="loader" None></div>
+                            <div class="weather-data" id="weather-data">
+                                <div class="weather-icon"></div>
+                                <div class="sub-result-div">
+                                    <div class="content-div">
+                                        <div class="city-div"></div>
+                                        <div class="description-div"></div>
+                                    </div>
+                                    <div class="content-div">
+                                        <div class="weather-temp"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="favorite-cities-container sub-section">
                 <div class="container">
-                    <div class="heading">
-                        <h2>Weather Master</h2>
-                    </div>
-                    <div class="city-input">
+                    <div class="form">
                         <input
-                            type="search"
-                            name="city-name"
-                            id="city-input-search"
-                            autocomplete="off"
+                            type="text"
+                            id="cityName"
+                            placeholder="Enter city name"
                         />
+                        <button onclick="addCity()">Add City</button>
+
+                        <button onclick="deleteCity()">Delete City</button>
+
+                        <button onclick="modifyCity()">Modify City</button>
+                        <input
+                            type="text"
+                            id="newCityName"
+                            placeholder="New city name"
+                            style="display: none"
+                        />
+                        <button
+                            id="update-button"
+                            style="display: none"
+                            onclick="updateCity()"
+                        >
+                            Update City
+                        </button>
                     </div>
-                    <div class="search-button-div">
-                        <button type="submit" id="submit-button">Search</button>
+                    <div class="heading">Favorite Cities</div>
+                    <div class="city-list">
+                        <ul id="cities-list"></ul>
                     </div>
                 </div>
-            </form>
-            
-            <div class="result-div">
-                <div class="loader" None></div>
-                <div class="weather-data" id="weather-data">
-                    <div class="weather-icon"></div>
-                    <div class="sub-result-div">
-                        <div class="content-div">
-                            <div class="city-div"></div>
-                            <div class="description-div"></div>
-                        </div>
-                        <div class="content-div">
-                            <div class="weather-temp"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
+
         <script src="/static/server.js"></script>
+        <script src="/static/favorite.js"></script>
     </body>
 </html>

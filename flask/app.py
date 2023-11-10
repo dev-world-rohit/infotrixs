@@ -10,10 +10,6 @@ weather = OpenWeatherMap()
 def main():
     return render_template("index.html")
 
-@app.route("/favorite")
-def favorite():
-    return render_template("favorite.html")
-
 @app.route("/get_weather_data", methods=['GET'])
 def get_weather_data():
     response = {}
